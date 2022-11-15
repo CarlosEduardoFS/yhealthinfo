@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">yhealth info</string>
+    <string name="men">Homem</string>
+    <string name="womam">Mulher</string>
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/heigth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="187dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="435dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart_symbol" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Nome: "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/age"
+        app:layout_constraintEnd_toStartOf="@+id/nameWiew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/nameWiew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="10dp"
+        android:text="bbb"
+        app:layout_constraintBottom_toTopOf="@+id/ageWiew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Idade: "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/heigth2"
+        app:layout_constraintEnd_toStartOf="@+id/ageWiew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/ageWiew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="10dp"
+        android:text="aaa"
+        app:layout_constraintBottom_toTopOf="@+id/heigthWiew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/nameWiew" />
+
+    <TextView
+        android:id="@+id/heigth2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Altura: "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/weight"
+        app:layout_constraintEnd_toStartOf="@+id/heigthWiew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/heigthWiew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/weightWiew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/heigth2"
+        app:layout_constraintTop_toBottomOf="@+id/ageWiew" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Peso: "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/biotype"
+        app:layout_constraintEnd_toStartOf="@+id/weightWiew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heigth2" />
+
+    <TextView
+        android:id="@+id/weightWiew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/biotypeWiew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/heigthWiew" />
+
+    <TextView
+        android:id="@+id/biotype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
+        android:text="Bio-tipo: "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fatPercent"
+        app:layout_constraintEnd_toStartOf="@+id/biotypeWiew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+    <TextView
+        android:id="@+id/biotypeWiew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginBottom="30dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/fatPercent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/biotype"
+        app:layout_constraintTop_toBottomOf="@+id/weightWiew" />
+
+    <TextView
+        android:id="@+id/fatPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:text="Percentual de Gordura: "
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/fatPercentWiew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biotype" />
+
+    <TextView
+        android:id="@+id/fatPercentWiew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/statusFatPercent"
+        app:layout_constraintStart_toEndOf="@+id/fatPercent"
+        app:layout_constraintTop_toBottomOf="@+id/biotype" />
+
+    <TextView
+        android:id="@+id/statusFatPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="97dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fatPercentWiew"
+        app:layout_constraintTop_toBottomOf="@+id/biotype" />
+
+    <TextView
+        android:id="@+id/imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="167dp"
+        android:text="IMC: "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imcWiew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fatPercent" />
+
+    <TextView
+        android:id="@+id/imcWiew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="166dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/statusImc"
+        app:layout_constraintStart_toEndOf="@+id/imc"
+        app:layout_constraintTop_toBottomOf="@+id/fatPercent" />
+
+    <TextView
+        android:id="@+id/statusImc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="166dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imcWiew"
+        app:layout_constraintTop_toBottomOf="@+id/fatPercentWiew" />
+
+</android.support.constraint.ConstraintLayout>
