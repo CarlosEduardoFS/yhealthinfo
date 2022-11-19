@@ -3,7 +3,10 @@ package com.yhealthinfo.yhealthinfo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.yhealthinfo.yhealthinfo.model.format.BiotypeFormat;
 import com.yhealthinfo.yhealthinfo.model.format.FatPercentFormat;
@@ -27,6 +30,7 @@ public class MainActivityInformationHealth extends AppCompatActivity {
     TextView imcStatus;
     TextView statusPercent;
     Bundle params;
+    Button more;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +59,16 @@ public class MainActivityInformationHealth extends AppCompatActivity {
                 }else{
                     statusPercent.setText(FatPercentFormat.fatPercentFormat(new PercentFatWomamService().analyzeFatPercentage(person)));
                 }
+
+                more.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivityInformationHealth.this, MainActivityMore.class);
+                        startActivity(intent);
+                        //Toast.makeText(getApplicationContext(), "Teste", Toast.LENGTH_LONG).show();
+                    }
+                });
+
             }
         }
 
@@ -70,6 +84,7 @@ public class MainActivityInformationHealth extends AppCompatActivity {
         imc = (TextView) findViewById(R.id.imcWiew);
         imcStatus = (TextView) findViewById(R.id.statusImc);
         statusPercent = (TextView) findViewById(R.id.statusFatPercent);
+        more = (Button) findViewById(R.id.more);
     }
 
     private void convertTextedit(String nameS, String ageS, String heigthS, String weightS, String fatPercentageS, String biotypeS ){

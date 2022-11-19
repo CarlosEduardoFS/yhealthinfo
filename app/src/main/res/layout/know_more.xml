@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/imc01"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:background="@drawable/style_button"
+        android:text="Importância do IMC"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imc02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informationMore"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/fatPercent02"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:background="@drawable/style_button"
+        android:text="Importância do percentual de gordura"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fatPercent01"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/imc02"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:background="@drawable/style_button"
+        android:text="Como calcular o IMC "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/fatPercent01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imc01"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/fatPercent01"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:background="@drawable/style_button"
+        android:text="Percentual mais importante na perca de peso"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/fatPercent02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imc02"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/titleMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saiba Mais"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/informationMore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/informationMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informationMoretexte"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textColorLink="#FD0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imc01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMore"
+        app:layout_constraintVertical_bias="0.5" />
+</android.support.constraint.ConstraintLayout>

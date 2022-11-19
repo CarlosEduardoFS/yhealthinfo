@@ -64,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
 
                 informationHealth.putExtras(params);
                 startActivity(informationHealth);
-
-                //Toast.makeText(getBaseContext(),teste,Toast.LENGTH_LONG).show();
             }
         });
         return null;

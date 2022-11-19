@@ -32,6 +32,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/age"
         app:layout_constraintEnd_toStartOf="@+id/nameWiew"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -46,14 +47,16 @@
         android:text="bbb"
         app:layout_constraintBottom_toTopOf="@+id/ageWiew"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="75dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="10dp"
@@ -82,7 +85,7 @@
         android:id="@+id/heigth2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="75dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="10dp"
@@ -111,7 +114,7 @@
         android:id="@+id/weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="75dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="10dp"
@@ -140,7 +143,7 @@
         android:id="@+id/biotype"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="75dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="30dp"
@@ -169,7 +172,7 @@
         android:id="@+id/fatPercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="5dp"
         android:text="Percentual de Gordura: "
@@ -244,5 +247,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imcWiew"
         app:layout_constraintTop_toBottomOf="@+id/fatPercentWiew" />
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_button"
+        android:text="Saiba Mais"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imcWiew"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
